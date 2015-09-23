@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ "$(id -u)" != "0" ]; then
+	echo "Sorry, you are not root."
+	exit 1
+fi
+
+echo "Creating link to bashrc"
+ln -s scripts/bashrc ~/.bashrc
+source ~/.bashrc
+
+echo "Creating link to openbox scripts"
+ln -s scripts/openbox-rc.xml ~/.config/openbox/rc.xml
+ln -s scripts/openbox-autostart ~/.config/openbox/autostart
+
+echo "Creating link to conky script"
+ln -s scripts/conkyrc ~/.config/conky/conkyrc
+
+echo "Creating link to devilspie2 script"
+ln -s scripts/devilspie2.lua ~/.config/devilspie2/devilspie2.lua
+
+echo "Creating link to tint2 script"
+ln -s scripts/tint2rc ~/.config/tint2/tint2rc
+

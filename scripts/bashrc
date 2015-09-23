@@ -1,0 +1,30 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+source `pwd`/colors.sh
+
+PS1="\[$bldcyn\]@\u \[$bldblk\]\W \[$txtrst\]\$ "
+
+export WORKON_HOME=/home/msfernandes/Documents/virtualenvs
+export PROJECT_HOME=/home/msfernandes/Documents/repositories
+export VIRTUALENVWRAPPER_SCRIPT=/bin/virtualenvwrapper.sh
+source /bin/virtualenvwrapper_lazy.sh
+
+alias django='python manage.py'
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/msfernandes/.gvm/bin/gvm-init.sh" ]] && source "/home/msfernandes/.gvm/bin/gvm-init.sh"
+
+PATH="/usr/local/heroku/bin:$PATH"
+PATH=$PATH:/home/msfernandes/Documents/google_appengine/
+
+eval $(thefuck --alias)

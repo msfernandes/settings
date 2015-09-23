@@ -1,0 +1,12 @@
+(sleep 1s && xcompmgr) &
+
+(sleep 2s && tint2) &
+
+(sleep 0s && feh --bg-scale /home/msfernandes/Pictures/spider-man.jpg) &
+
+(sleep 0s && devilspie2) &
+
+(sleep 0s && volumeicon) &
+
+(sleep 1s && conky -c /home/msfernandes/.config/conky/conkyrc) &
+
