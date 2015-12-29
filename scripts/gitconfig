@@ -1,0 +1,15 @@
+[user]
+	name = Matheus Fernandes
+	email = matheus.souza.fernandes@gmail.com
+[core]
+	editor = vim
+	pager = more
+[help]
+	autocorrect = 1
+[color]
+	branch = true
+	diff = true
+	interactive = true
+	status = true
+[commit]
+	template = /home/msfernandes/.gitmessage
