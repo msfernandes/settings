@@ -359,7 +359,7 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>sublime</command>
+        <command>subl</command>
       </action>
     </keybind>
     <keybind key="C-e">

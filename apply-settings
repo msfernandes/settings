@@ -1,24 +1,30 @@
 #!/bin/bash
 
-if [ "$(id -u)" != "0" ]; then
-	echo "Sorry, you are not root."
-	exit 1
-fi
-
 echo "Creating link to bashrc"
-ln -s scripts/bashrc ~/.bashrc
+rm ~/.bashrc
+ln -s ~/Documents/repositories/settings/scripts/bashrc ~/.bashrc
 source ~/.bashrc
 
-echo "Creating link to openbox scripts"
-ln -s scripts/openbox-rc.xml ~/.config/openbox/rc.xml
-ln -s scripts/openbox-autostart ~/.config/openbox/autostart
+echo "Creating link to openbox ~/Documents/repositories/settings/scripts"
+mkdir -p ~/.config/openbox
+rm ~/.config/openbox/rc.xml
+rm ~/.config/openbox/autostart
+
+ln -s ~/Documents/repositories/settings/scripts/openbox-rc.xml ~/.config/openbox/rc.xml
+ln -s ~/Documents/repositories/settings/scripts/openbox-autostart ~/.config/openbox/autostart
 
 echo "Creating link to conky script"
-ln -s scripts/conkyrc ~/.config/conky/conkyrc
+mkdir -p ~/.config/conky
+rm ~/.config/conky/conkyrc
+ln -s ~/Documents/repositories/settings/scripts/conkyrc ~/.config/conky/conkyrc
 
 echo "Creating link to devilspie2 script"
-ln -s scripts/devilspie2.lua ~/.config/devilspie2/devilspie2.lua
+mkdir -p ~/.config/devilspie2
+rm ~/.config/devilspie2/devilspie2.lua
+ln -s ~/Documents/repositories/settings/scripts/devilspie2.lua ~/.config/devilspie2/devilspie2.lua
 
 echo "Creating link to tint2 script"
-ln -s scripts/tint2rc ~/.config/tint2/tint2rc
+mkdir -p ~/.config/tint2
+rm ~/.config/tint2/tint2rc
+ln -s ~/Documents/repositories/settings/scripts/tint2rc ~/.config/tint2/tint2rc
 

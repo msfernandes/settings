@@ -1,5 +1,7 @@
 (sleep 1s && xcompmgr) &
 
+(sleep 3s && volumeicon) &
+
 (sleep 2s && tint2) &
 
 (sleep 0s && feh --bg-fill /home/msfernandes/Pictures/pencillabs.png) &

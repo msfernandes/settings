@@ -10,7 +10,7 @@ fi
 
 # User specific aliases and functions
 
-source ~/Dropbox/matheus/bash/colors.sh
+source ~/Documents/repositories/settings/scripts/colors.sh
 
 PS1="\[$bldcyn\]@\u \[$bldblk\]\W \[$txtrst\]\$ "
 
@@ -27,11 +27,3 @@ alias django='python manage.py'
 PATH="/usr/local/heroku/bin:$PATH"
 PATH=$PATH:/home/msfernandes/Documents/google_appengine/
 
-eval $(thefuck --alias)
-
-# if [ -f `which powerline-daemon` ]; then
-#   powerline-daemon -q
-#   POWERLINE_BASH_CONTINUATION=1
-#   POWERLINE_BASH_SELECT=1
-#   . /usr/share/powerline/bash/powerline.sh
-# fi

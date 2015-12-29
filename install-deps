@@ -5,5 +5,4 @@ if [ "$(id -u)" != "0" ]; then
         exit 1
 fi
 
-dnf install -y tint2 devilspie2 conky
-pip install thefuck
+dnf install -y tint2 devilspie2 conky network-manager-applet terminator volumeicon pavucontrol feh gmrun scrot xcompmgr
