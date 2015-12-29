@@ -28,3 +28,8 @@ mkdir -p ~/.config/tint2
 rm ~/.config/tint2/tint2rc
 ln -s ~/Documents/repositories/settings/scripts/tint2rc ~/.config/tint2/tint2rc
 
+echo "Creating link to git configs"
+rm ~/.gitconfig
+ln -s ~/Documents/repositories/settings/scripts/gitconfig ~/.gitconfig
+rm ~/.gitmessage
+ln -s ~/Documents/repositories/settings/scripts/gitmessage ~/.gitmessage
