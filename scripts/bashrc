@@ -14,6 +14,7 @@ source ~/Documents/repositories/settings/scripts/colors.sh
 
 PS1="\[$bldcyn\]@\u \[$bldblk\]\W \[$txtrst\]\$ "
 
+export JAVA_HOME=/usr/java/default
 export WORKON_HOME=/home/msfernandes/Documents/virtualenvs
 export PROJECT_HOME=/home/msfernandes/Documents/repositories
 export VIRTUALENVWRAPPER_SCRIPT=/bin/virtualenvwrapper.sh
@@ -26,4 +27,9 @@ alias django='python manage.py'
 
 PATH="/usr/local/heroku/bin:$PATH"
 PATH=$PATH:/home/msfernandes/Documents/google_appengine/
+PATH=${PATH}:/home/msfernandes/Documents/android-sdk/platform-tools
+PATH=${PATH}:/home/msfernandes/Documents/android-sdk/tools
+
+eval $(thefuck --alias)
+export PATH=~/.gem/ruby/1.9.1/bin:$PATH
 

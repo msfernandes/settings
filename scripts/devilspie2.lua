@@ -1,10 +1,12 @@
 debug_print("Window Name: " .. get_window_name());
 debug_print("Application name: " .. get_application_name());
 
-if (get_application_name() == "Sublime Text") then
+if (string.find(get_application_name(), "Atom") or get_application_name() == "atom") then
     set_window_workspace(2);
     set_window_fullscreen(true);
     focus();
+elseif (string.find(get_window_name(), "Open") or string.find(get_application_name(), "Open")) then
+    -- nothing to do
 elseif (get_window_name() == "Save File") then
     -- nothing to do
 elseif (get_application_name() == "xfce4-appfinder") then

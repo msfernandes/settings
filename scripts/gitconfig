@@ -3,7 +3,7 @@
 	email = matheus.souza.fernandes@gmail.com
 [core]
 	editor = vim
-	pager = more
+	pager = less 
 [help]
 	autocorrect = 1
 [color]
@@ -13,3 +13,5 @@
 	status = true
 [commit]
 	template = /home/msfernandes/.gitmessage
+[url "https://"]
+	insteadOf = git://

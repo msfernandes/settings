@@ -357,12 +357,12 @@
         <command>spotify</command>
       </action>
     </keybind>
-    <keybind key="W-s">
+    <keybind key="W-a">
       <action name="Execute">
-        <command>subl</command>
+        <command>atom</command>
       </action>
     </keybind>
-    <keybind key="C-e">
+    <keybind key="W-C-e">
       <action name="Execute">
         <command>nautilus</command>
       </action>
@@ -447,9 +447,6 @@
       <action name="SendToDesktop">
         <to>4</to>
       </action>
-    </keybind>
-    <keybind key="C-Up">
-      <action name="Iconify"/>
     </keybind>
     <keybind key="C-W-x">
       <action name="Execute">

@@ -1,10 +1,8 @@
 (sleep 1s && xcompmgr) &
 
-(sleep 3s && volumeicon) &
-
 (sleep 2s && tint2) &
 
-(sleep 0s && feh --bg-fill /home/msfernandes/Pictures/pencillabs.png) &
+(sleep 0s && feh --bg-scale /home/msfernandes/Pictures/wallpaper.png) &
 
 (sleep 0s && devilspie2) &
 

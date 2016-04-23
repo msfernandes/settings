@@ -33,6 +33,7 @@ border_color = #000000 0
 #---------------------------------------------
 # PANEL
 #---------------------------------------------
+panel_items = TSBC
 panel_monitor = all
 panel_position = top center
 panel_size = 0 25
@@ -83,12 +84,12 @@ clock_background_id = 0
 #---------------------------------------------
 # BATTERY
 #---------------------------------------------
-battery = 0
-battery_low_status = 0
-battery_low_cmd = (null)
-bat1_font = (null)
-bat2_font = (null)
-battery_font_color = #000000 0
+battery = 1 
+battery_low_status = 20
+battery_low_cmd = notify-send "batery low"
+bat1_font = Roboto TT1 BRK 8
+bat2_font = Roboto TT1 BRK 8
+battery_font_color = #FFFFFF 68 
 battery_padding = 2 2
 battery_background_id = 0
 
