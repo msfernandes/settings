@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [ "$(id -u)" != "0" ]; then
-        echo "Sorry, you are not root."
-        exit 1
-fi
-
-dnf install -y tint2 devilspie2 conky network-manager-applet terminator volumeicon pavucontrol feh gmrun scrot xcompmgr

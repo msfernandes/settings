@@ -10,20 +10,18 @@ fi
 
 # User specific aliases and functions
 
-source ~/Documents/repositories/settings/scripts/colors.sh
+source ~/Documents/repositories/configs/scripts/colors.sh
 
 PS1="\[$bldcyn\]@\u \[$bldblk\]\W \[$txtrst\]\$ "
 
 export JAVA_HOME=/usr/java/default
 export WORKON_HOME=/home/msfernandes/Documents/virtualenvs
 export PROJECT_HOME=/home/msfernandes/Documents/repositories
-export VIRTUALENVWRAPPER_SCRIPT=/bin/virtualenvwrapper.sh
-source /bin/virtualenvwrapper_lazy.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper_lazy.sh
 
 alias django='python manage.py'
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/home/msfernandes/.gvm/bin/gvm-init.sh" ]] && source "/home/msfernandes/.gvm/bin/gvm-init.sh"
 
 PATH="/usr/local/heroku/bin:$PATH"
 PATH=$PATH:/home/msfernandes/Documents/google_appengine/

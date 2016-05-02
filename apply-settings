@@ -1,35 +1,40 @@
 #!/bin/bash
 
 echo "Creating link to bashrc"
-rm ~/.bashrc
-ln -s ~/Documents/repositories/settings/scripts/bashrc ~/.bashrc
-source ~/.bashrc
+rm $HOME/.bashrc
+ln -s $HOME/Documents/repositories/configs/scripts/bashrc $HOME/.bashrc
+source $HOME/.bashrc
 
-echo "Creating link to openbox ~/Documents/repositories/settings/scripts"
-mkdir -p ~/.config/openbox
-rm ~/.config/openbox/rc.xml
-rm ~/.config/openbox/autostart
+echo "Creating link to openbox ~/Documents/repositories/configs/scripts"
+mkdir -p $HOME/.config/openbox
+rm $HOME/.config/openbox/rc.xml
+rm $HOME/.config/openbox/autostart
 
-ln -s ~/Documents/repositories/settings/scripts/openbox-rc.xml ~/.config/openbox/rc.xml
-ln -s ~/Documents/repositories/settings/scripts/openbox-autostart ~/.config/openbox/autostart
+ln -s $HOME/Documents/repositories/configs/scripts/openbox-rc.xml $HOME/.config/openbox/rc.xml
+ln -s $HOME/Documents/repositories/configs/scripts/openbox-autostart $HOME/.config/openbox/autostart
 
 echo "Creating link to conky script"
-mkdir -p ~/.config/conky
-rm ~/.config/conky/conkyrc
-ln -s ~/Documents/repositories/settings/scripts/conkyrc ~/.config/conky/conkyrc
+mkdir -p $HOME/.config/conky
+rm $HOME/.config/conky/conkyrc
+ln -s $HOME/Documents/repositories/configs/scripts/conkyrc $HOME/.config/conky/conkyrc
 
 echo "Creating link to devilspie2 script"
-mkdir -p ~/.config/devilspie2
-rm ~/.config/devilspie2/devilspie2.lua
-ln -s ~/Documents/repositories/settings/scripts/devilspie2.lua ~/.config/devilspie2/devilspie2.lua
+mkdir -p $HOME/.config/devilspie2
+rm $HOME/.config/devilspie2/devilspie2.lua
+ln -s $HOME/Documents/repositories/configs/scripts/devilspie2.lua $HOME/.config/devilspie2/devilspie2.lua
 
 echo "Creating link to tint2 script"
-mkdir -p ~/.config/tint2
-rm ~/.config/tint2/tint2rc
-ln -s ~/Documents/repositories/settings/scripts/tint2rc ~/.config/tint2/tint2rc
+mkdir -p $HOME/.config/tint2
+rm $HOME/.config/tint2/tint2rc
+ln -s $HOME/Documents/repositories/configs/scripts/tint2rc $HOME/.config/tint2/tint2rc
+
+echo "Creating link to terminator script"
+mkdir -p $HOME/.config/terminator
+rm $HOME/.config/terminator/config
+ln -s $HOME/Documents/repositories/configs/scripts/terminator $HOME/.config/terminator/config
 
 echo "Creating link to git configs"
-rm ~/.gitconfig
-ln -s ~/Documents/repositories/settings/scripts/gitconfig ~/.gitconfig
-rm ~/.gitmessage
-ln -s ~/Documents/repositories/settings/scripts/gitmessage ~/.gitmessage
+rm $HOME/.gitconfig
+ln -s $HOME/Documents/repositories/configs/scripts/gitconfig $HOME/.gitconfig
+rm $HOME/.gitmessage
+ln -s $HOME/Documents/repositories/configs/scripts/gitmessage $HOME/.gitmessage

@@ -1,0 +1,72 @@
+[global_config]
+  borderless = True
+  geometry_hinting = False
+  handle_size = 0
+  inactive_color_offset = 0.44
+  window_state = fullscreen
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[msfernandes]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = d54c1f83-29b6-4e3a-858a-3d5f3bc3ee88
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1366, 768
+      title = /bin/bash
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 379
+      ratio = 0.499348958333
+      type = VPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 678
+      ratio = 0.499633967789
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = d54c1f83-29b6-4e3a-858a-3d5f3bc3ee88
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = caf08515-461d-407f-8c38-ab926034c8c2
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = afb67953-2093-4054-92b2-e9ea92d6b615
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#1b0016"
+    background_darkness = 0.82
+    background_image = None
+    background_type = transparent
+    cursor_shape = underline
+    font = Hack 10
+    foreground_color = "#d5d3d3"
+    icon_bell = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

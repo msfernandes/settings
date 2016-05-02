@@ -11,7 +11,7 @@ elseif (get_window_name() == "Save File") then
     -- nothing to do
 elseif (get_application_name() == "xfce4-appfinder") then
     center();
-elseif (get_application_name() == "gmrun") then
+elseif (get_application_name() == "synapse") then
     center();
 elseif (get_application_name() == "Execute") then
     center();
@@ -34,6 +34,9 @@ elseif (get_application_name() == "Telegram") then
     set_window_workspace(5);
     set_window_fullscreen(true);
     focus();
+elseif (string.find(get_window_name(), "/sbin/shutdown")) then
+		debug_print("foi");
+		center();
 elseif (string.find(get_application_name(), "Slack")) then
     set_window_workspace(5);
     set_window_fullscreen(true);

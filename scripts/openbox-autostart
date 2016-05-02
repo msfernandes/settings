@@ -6,3 +6,4 @@
 
 (sleep 0s && devilspie2) &
 
+(sleep 1s && xfce4-volumed) &
