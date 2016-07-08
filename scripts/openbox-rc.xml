@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Siva Flat Round Dark</name>
+    <name>Onyx</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -181,6 +181,16 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
+		<keybind key="XF86MonBrightnessUp">
+	    <action name="Execute">
+       	<command>xbacklight +10</command>
+    	 </action>
+		</keybind>
+		<keybind key="XF86MonBrightnessDown">
+     	<action name="Execute">
+      	 <command>xbacklight -10</command>
+    	 </action>
+		</keybind>
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
