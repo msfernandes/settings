@@ -1,7 +1,7 @@
 debug_print("Window Name: " .. get_window_name());
 debug_print("Application name: " .. get_application_name());
 
-if (string.find(get_application_name(), "Atom") or get_application_name() == "atom") then
+if (string.find(get_application_name(), "Sublime Text") or get_application_name() == "Sublime Text") then
     set_window_workspace(2);
     set_window_fullscreen(true);
     focus();

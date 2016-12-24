@@ -367,9 +367,9 @@
         <command>spotify</command>
       </action>
     </keybind>
-    <keybind key="W-a">
+    <keybind key="W-s">
       <action name="Execute">
-        <command>atom</command>
+        <command>subl</command>
       </action>
     </keybind>
     <keybind key="W-C-e">
