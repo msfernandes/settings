@@ -41,7 +41,7 @@ elseif (string.find(get_application_name(), "Slack")) then
     set_window_workspace(5);
     set_window_fullscreen(true);
     focus();
-elseif (string.find(get_application_name(), "Google Chrome")) then
+elseif (string.find(get_application_name(), "Chromium")) then
     set_window_workspace(1);
     maximize();
     focus();

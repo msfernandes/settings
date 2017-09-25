@@ -22,12 +22,21 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 source /usr/bin/virtualenvwrapper_lazy.sh
 
 alias django='python manage.py'
+alias lab-server-68='ssh msfernandes@200.219.134.68'
+alias lab-server-76='ssh msfernandes@200.219.134.76'
+alias lab-edem-prod='ssh labhacker@200.219.134.77'
+alias lab-edem-dev='ssh labhacker@200.219.134.78'
+alias lab-edem-hom='ssh labhacker@200.219.134.79'
 
 PATH="/usr/local/heroku/bin:$PATH"
 PATH=$PATH:/home/msfernandes/Documents/google_appengine/
 PATH=${PATH}:/home/msfernandes/Documents/android-sdk/platform-tools
 PATH=${PATH}:/home/msfernandes/Documents/android-sdk/tools
+PATH=${PATH}:/home/msfernandes/Downloads/geckodriver-v0.16.1-linux64
 
 eval $(thefuck --alias)
 export PATH=~/.gem/ruby/1.9.1/bin:$PATH
 
+
+# added by travis gem
+[ -f /home/msfernandes/.travis/travis.sh ] && source /home/msfernandes/.travis/travis.sh
